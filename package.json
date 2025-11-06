@@ -4,6 +4,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node src/cmd/server.ts",
+    "dev:watch": "nodemon --watch src --ext ts --exec ts-node src/cmd/server.ts",
+    "build": "prisma generate && tsc",
+    "vercel-build": "prisma generate",
+    "lint": "eslint . --ext .ts",
     "migrate": "prisma migrate dev",
     "migrate:fresh": "prisma migrate reset --force",
     "generate": "npx prisma generate",
@@ -20,6 +25,7 @@
     "argon2": "^0.44.0",
     "axios": "^1.13.2",
     "cookie": "^1.0.2",
+    "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "expres": "^0.0.5",
@@ -28,10 +34,12 @@
     "mailer": "^0.6.6",
     "multer": "^2.0.2",
     "nodemailer": "^7.0.10",
+    "ts-node": "^10.9.2",
     "uuid": "^13.0.0"
   },
   "devDependencies": {
     "@types/cookie": "^0.6.0",
+    "@types/cookie-parser": "^1.4.10",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.5",
     "@types/jsonwebtoken": "^9.0.10",

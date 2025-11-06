@@ -1,0 +1,68 @@
+# Project Documentation
+
+## Installation
+
+1. Install dependencies:
+    ```bash
+    npm install
+    ```
+
+## Running the Express Server
+
+- Start the server in development mode:
+  ```bash
+  npm run dev
+  ```
+- Start the server with automatic reload on file changes:
+  ```bash
+  npm run dev:watch
+  ```
+
+## Database Migration
+
+- Run database migrations:
+  ```bash
+  npm run migrate
+  ```
+- Reset and re-run all migrations (fresh migration):
+  ```bash
+  npm run migrate:fresh
+  ```
+- Reset the database:
+  ```bash
+  npm run reset
+  ```
+
+## Prisma
+
+- Generate Prisma client:
+  ```bash
+  npm run generate
+  ```
+- Build project and generate Prisma client:
+  ```bash
+  npm run build
+  ```
+
+## Seeding Database
+
+- Seed the database with initial data:
+  ```bash
+  npm run seed
+  ```
+
+## Linting
+
+- Run ESLint to check code quality:
+  ```bash
+  npm run lint
+  ```
+
+## Testing
+
+- Run unit tests:
+  ```bash
+  npm run unit-test
+  ```
+
+---
