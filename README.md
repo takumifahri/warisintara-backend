@@ -3,66 +3,66 @@
 ## Installation
 
 1. Install dependencies:
-    ```bash
-    npm install
-    ```
+```bash
+  npm install
+```
 
 ## Running the Express Server
 
 - Start the server in development mode:
-  ```bash
+```bash
   npm run dev
-  ```
+```
 - Start the server with automatic reload on file changes:
-  ```bash
+```bash
   npm run dev:watch
-  ```
+```
 
 ## Database Migration
 
 - Run database migrations:
-  ```bash
+```bash
   npm run migrate
-  ```
+```
 - Reset and re-run all migrations (fresh migration):
-  ```bash
+```bash
   npm run migrate:fresh
-  ```
+```
 - Reset the database:
-  ```bash
+```bash
   npm run reset
-  ```
+```
 
 ## Prisma
 
 - Generate Prisma client:
-  ```bash
+```bash
   npm run generate
-  ```
+```
 - Build project and generate Prisma client:
-  ```bash
+```bash
   npm run build
-  ```
+```
 
 ## Seeding Database
 
 - Seed the database with initial data:
-  ```bash
+```bash
   npm run seed
-  ```
+```
 
 ## Linting
 
 - Run ESLint to check code quality:
-  ```bash
+```bash
   npm run lint
-  ```
+```
 
 ## Testing
 
 - Run unit tests:
-  ```bash
+```bash
   npm run unit-test
-  ```
+```
 
 ---
